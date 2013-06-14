@@ -60,7 +60,7 @@ int main(int argc, char *argv[]){
 		else {
 			std::cout << "Excluding angle brackets in output.  ";
 		}		
-        std::cout << "Outputting plaintext to file: " << destinationFile.file_string() << std::endl;
+        std::cout << "Outputting plaintext to file: " << destinationFile.string() << std::endl;
       }
       fs::ofstream os(destinationFile);
       convert( is, os, 0, allowTags, verbose );
